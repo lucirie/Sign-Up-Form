@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="left-section">
+        <img src="assets/leaf.jpg" alt="picture of leaf">
+        <div class="strap">
+            <img src="assets/odin.png" alt="picture of odin logo">
+            <h1 class="logo-title">ODIN</h1>
+        </div>
+        <div class="attribute">Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+    </section>
+
+    <section class="right-section">
+        <h1 class="header">This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up <i>now</i> to get started.</h1>
+        <h1 class="header">You <i>know</i> you want to.</h1>
+        <form>
+            <div class="form-container">
+                <h1>Let's do this!</h1>
+                <div>
+                    <p>
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="user-first-name" id="firstName" pattern="[A-Za-z]+" title="Letters Only" required >
+                    </p>
+
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="user-email" id="email" pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/" title="Input a proper email" required>
+                    </p>
+
+                    <p>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="user-password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Minimum of 8 characters, 1 uppercase, 1 lowercase, and 1 number" required>
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="user-last-name" id="lastName" pattern="[A-Za-z]+" title="Letters Only" required>
+                    </p>
+
+                    <p>
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" name="user-phone-number" id="phoneNumber" pattern="^\+\d{1,3}\d{9,15}$" placeholder="+1234567890" required>
+                    </p>
+
+                    <p>
+                        <label for="passwordConfirmation">CONFIRM PASSWORD</label>
+                        <input type="password" id="passwordConfirmation" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Passwords don't match" required>
+                    </p>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <h2>Already have an account? <a href="#">Log in</a></h2>
+    </section>
+</body>
+</html>
